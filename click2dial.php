@@ -90,7 +90,7 @@ If you have not received our call within two minutes, verify that your name and 
 </p>
 
 
-<?
+<?php
 }
 else
 {
@@ -100,7 +100,7 @@ else
 	<tr><td>
 	<font size="2" face="verdana,arial,georgia" 
 color="#000000">Enter your name and 10-digit number (e.g. 7875551234). If available, we will call you within the next two minutes.</font>
-	<form action="<? echo $_SERVER['PHP_SELF'] ?>" method="post">
+	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
 		
 Name:&nbsp;&nbsp;&nbsp; <input type="text" size="30" maxlength="12" name="txtname"><br><br>
 Number: <input type="text" size="30" maxlength="10" name="txtphonenumber"><br><br>
@@ -110,7 +110,7 @@ value="Call Me Now"></center>
 	</td></tr>
 </table>
 </p>
-<?
+<?php
 }
 ?>
 </body>
